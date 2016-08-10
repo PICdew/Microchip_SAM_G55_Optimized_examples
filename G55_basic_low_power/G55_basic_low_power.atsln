@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Atmel Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "G55_Sleep_Mode_PIO", "G55_Sleep_Mode_PIO\G55_Sleep_Mode_PIO.cproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "G55_Backup_Mode_PIO", "G55_Backup_Mode_PIO\G55_Backup_Mode_PIO.cproj", "{25727EAB-E922-4114-B28D-1FEB751A10C0}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "G55_Wait_Mode_PIO", "G55_Wait_Mode_PIO\G55_Wait_Mode_PIO.cproj", "{17B8D2FC-520D-4135-8BBD-00497A58BBFD}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "G55_Backup_Mode_RTT", "G55_Backup_Mode_RTT\G55_Backup_Mode_RTT.cproj", "{EA23098C-9301-4769-84FF-0D9A5E92E9F9}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "G55_Wait_Mode_RTT", "G55_Wait_Mode_RTT\G55_Wait_Mode_RTT.cproj", "{8E75CD50-9846-4DF8-8D29-B749F9D31293}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "G55_Sleep_Mode_RTT", "G55_Sleep_Mode_RTT\G55_Sleep_Mode_RTT.cproj", "{9AF39A55-96B1-4143-A15D-3D1C9B8C1C1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Release|ARM = Release|ARM
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|ARM.ActiveCfg = Debug|ARM
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|ARM.Build.0 = Debug|ARM
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|ARM.ActiveCfg = Release|ARM
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|ARM.Build.0 = Release|ARM
+		{25727EAB-E922-4114-B28D-1FEB751A10C0}.Debug|ARM.ActiveCfg = Debug|ARM
+		{25727EAB-E922-4114-B28D-1FEB751A10C0}.Debug|ARM.Build.0 = Debug|ARM
+		{25727EAB-E922-4114-B28D-1FEB751A10C0}.Release|ARM.ActiveCfg = Release|ARM
+		{25727EAB-E922-4114-B28D-1FEB751A10C0}.Release|ARM.Build.0 = Release|ARM
+		{17B8D2FC-520D-4135-8BBD-00497A58BBFD}.Debug|ARM.ActiveCfg = Debug|ARM
+		{17B8D2FC-520D-4135-8BBD-00497A58BBFD}.Debug|ARM.Build.0 = Debug|ARM
+		{17B8D2FC-520D-4135-8BBD-00497A58BBFD}.Release|ARM.ActiveCfg = Release|ARM
+		{17B8D2FC-520D-4135-8BBD-00497A58BBFD}.Release|ARM.Build.0 = Release|ARM
+		{EA23098C-9301-4769-84FF-0D9A5E92E9F9}.Debug|ARM.ActiveCfg = Debug|ARM
+		{EA23098C-9301-4769-84FF-0D9A5E92E9F9}.Debug|ARM.Build.0 = Debug|ARM
+		{EA23098C-9301-4769-84FF-0D9A5E92E9F9}.Release|ARM.ActiveCfg = Release|ARM
+		{EA23098C-9301-4769-84FF-0D9A5E92E9F9}.Release|ARM.Build.0 = Release|ARM
+		{8E75CD50-9846-4DF8-8D29-B749F9D31293}.Debug|ARM.ActiveCfg = Debug|ARM
+		{8E75CD50-9846-4DF8-8D29-B749F9D31293}.Debug|ARM.Build.0 = Debug|ARM
+		{8E75CD50-9846-4DF8-8D29-B749F9D31293}.Release|ARM.ActiveCfg = Release|ARM
+		{8E75CD50-9846-4DF8-8D29-B749F9D31293}.Release|ARM.Build.0 = Release|ARM
+		{9AF39A55-96B1-4143-A15D-3D1C9B8C1C1B}.Debug|ARM.ActiveCfg = Debug|ARM
+		{9AF39A55-96B1-4143-A15D-3D1C9B8C1C1B}.Debug|ARM.Build.0 = Debug|ARM
+		{9AF39A55-96B1-4143-A15D-3D1C9B8C1C1B}.Release|ARM.ActiveCfg = Release|ARM
+		{9AF39A55-96B1-4143-A15D-3D1C9B8C1C1B}.Release|ARM.Build.0 = Release|ARM
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
