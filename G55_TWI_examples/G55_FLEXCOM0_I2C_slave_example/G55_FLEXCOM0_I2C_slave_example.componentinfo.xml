@@ -22,11 +22,13 @@
 					<CVendor>Atmel</CVendor>
 					<CVersion>1.0.0</CVersion>
 					<DefaultRepoPath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs</DefaultRepoPath>
-					<DependentComponents />
+					<DependentComponents>
+						<d4p1:anyType z:Ref="i1" />
+					</DependentComponents>
 					<Description></Description>
 					<Files>
 						<d4p1:anyType i:type="FileInfo">
-							<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMG_DFP\1.0.35\samg55\include</AbsolutePath>
+							<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMG_DFP\1.0.32\samg55\include</AbsolutePath>
 							<Attribute></Attribute>
 							<Category>include</Category>
 							<Condition>C</Condition>
@@ -37,29 +39,29 @@
 							<SourcePath></SourcePath>
 						</d4p1:anyType>
 						<d4p1:anyType i:type="FileInfo">
-							<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMG_DFP\1.0.35\samg55\include\sam.h</AbsolutePath>
+							<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMG_DFP\1.0.32\samg55\include\sam.h</AbsolutePath>
 							<Attribute></Attribute>
 							<Category>header</Category>
 							<Condition>C</Condition>
-							<FileContentHash>YjtVq9ZaLI71hCseP12OsA==</FileContentHash>
+							<FileContentHash>tW4nuUOqqLctDE/LLGiTOg==</FileContentHash>
 							<FileVersion></FileVersion>
 							<Name>samg55/include/sam.h</Name>
 							<SelectString></SelectString>
 							<SourcePath></SourcePath>
 						</d4p1:anyType>
 						<d4p1:anyType i:type="FileInfo">
-							<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMG_DFP\1.0.35\samg55\templates\main.c</AbsolutePath>
+							<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMG_DFP\1.0.32\samg55\templates\main.c</AbsolutePath>
 							<Attribute>template</Attribute>
 							<Category>source</Category>
 							<Condition>C Exe</Condition>
-							<FileContentHash>8zrGCYPG0xTQ3sT6oSm7kQ==</FileContentHash>
+							<FileContentHash>o0ncidL5gR0Z0YwWJ1YroQ==</FileContentHash>
 							<FileVersion></FileVersion>
 							<Name>samg55/templates/main.c</Name>
 							<SelectString>Main file (.c)</SelectString>
 							<SourcePath></SourcePath>
 						</d4p1:anyType>
 						<d4p1:anyType i:type="FileInfo">
-							<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMG_DFP\1.0.35\samg55\templates\main.cpp</AbsolutePath>
+							<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMG_DFP\1.0.32\samg55\templates\main.cpp</AbsolutePath>
 							<Attribute>template</Attribute>
 							<Category>source</Category>
 							<Condition>C Exe</Condition>
@@ -70,7 +72,7 @@
 							<SourcePath></SourcePath>
 						</d4p1:anyType>
 						<d4p1:anyType i:type="FileInfo">
-							<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMG_DFP\1.0.35\samg55\gcc\system_samg55.c</AbsolutePath>
+							<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMG_DFP\1.0.32\samg55\gcc\system_samg55.c</AbsolutePath>
 							<Attribute>config</Attribute>
 							<Category>source</Category>
 							<Condition>GCC Exe</Condition>
@@ -81,7 +83,7 @@
 							<SourcePath></SourcePath>
 						</d4p1:anyType>
 						<d4p1:anyType i:type="FileInfo">
-							<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMG_DFP\1.0.35\samg55\gcc\gcc\startup_samg55.c</AbsolutePath>
+							<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMG_DFP\1.0.32\samg55\gcc\gcc\startup_samg55.c</AbsolutePath>
 							<Attribute>config</Attribute>
 							<Category>source</Category>
 							<Condition>GCC Exe</Condition>
@@ -92,7 +94,7 @@
 							<SourcePath></SourcePath>
 						</d4p1:anyType>
 						<d4p1:anyType i:type="FileInfo">
-							<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMG_DFP\1.0.35\samg55\gcc\gcc\samg55j19_flash.ld</AbsolutePath>
+							<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMG_DFP\1.0.32\samg55\gcc\gcc\samg55j19_flash.ld</AbsolutePath>
 							<Attribute>config</Attribute>
 							<Category>linkerScript</Category>
 							<Condition>GCC Exe</Condition>
@@ -103,7 +105,7 @@
 							<SourcePath></SourcePath>
 						</d4p1:anyType>
 						<d4p1:anyType i:type="FileInfo">
-							<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMG_DFP\1.0.35\samg55\gcc\gcc\samg55j19_sram.ld</AbsolutePath>
+							<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMG_DFP\1.0.32\samg55\gcc\gcc\samg55j19_sram.ld</AbsolutePath>
 							<Attribute>config</Attribute>
 							<Category>other</Category>
 							<Condition>GCC Exe</Condition>
@@ -114,7 +116,7 @@
 							<SourcePath></SourcePath>
 						</d4p1:anyType>
 						<d4p1:anyType i:type="FileInfo">
-							<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMG_DFP\1.0.35\samg55\gcc\gcc\samg55_flash.ld</AbsolutePath>
+							<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMG_DFP\1.0.32\samg55\gcc\gcc\samg55_flash.ld</AbsolutePath>
 							<Attribute>config</Attribute>
 							<Category>other</Category>
 							<Condition>GCC Exe</Condition>
@@ -125,7 +127,7 @@
 							<SourcePath></SourcePath>
 						</d4p1:anyType>
 						<d4p1:anyType i:type="FileInfo">
-							<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMG_DFP\1.0.35\samg55\gcc\gcc\samg55_sram.ld</AbsolutePath>
+							<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\SAMG_DFP\1.0.32\samg55\gcc\gcc\samg55_sram.ld</AbsolutePath>
 							<Attribute>config</Attribute>
 							<Category>other</Category>
 							<Condition>GCC Exe</Condition>
@@ -137,8 +139,8 @@
 						</d4p1:anyType>
 					</Files>
 					<PackName>SAMG_DFP</PackName>
-					<PackPath>C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/SAMG_DFP/1.0.35/Atmel.SAMG_DFP.pdsc</PackPath>
-					<PackVersion>1.0.35</PackVersion>
+					<PackPath>C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/SAMG_DFP/1.0.32/Atmel.SAMG_DFP.pdsc</PackPath>
+					<PackVersion>1.0.32</PackVersion>
 					<PresentInProject>true</PresentInProject>
 					<ReferenceConditionId>ATSAMG55J19</ReferenceConditionId>
 					<RteComponents>

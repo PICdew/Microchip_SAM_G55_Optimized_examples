@@ -38,7 +38,8 @@ volatile uint8_t databuff[1024] = {0};
 volatile uint8_t first_data = 1;
 volatile uint32_t intAddr = 0;
 
-void FLEXCOM0_Handler(void){
+void FLEXCOM0_Handler(void)
+{
 	uint32_t status;
 	status = TWI0->TWI_SR;
 	/*** ERROR Interrupt Management ***/
@@ -61,16 +62,19 @@ void FLEXCOM0_Handler(void){
 }
 
 /* TWI call-back to be modified according to Application need (Default I2C Mem emulation) */
-void TWI_EOSACC_callback(void) {
+void TWI_EOSACC_callback(void) 
+{
 	first_data = 1;
 }
 
-void TWI_write_callback(void) {
+void TWI_write_callback(void) 
+{
 	FLEXCOM0->FLEXCOM_THR = databuff[++intAddr];
 }
 
-void TWI_read_callback(void) {
-	if (first_data){
+void TWI_read_callback(void) 
+{
+	if (first_data) {
 		first_data = 0;
 		intAddr = FLEXCOM0->FLEXCOM_RHR;
 		FLEXCOM0->FLEXCOM_THR = databuff[intAddr];
@@ -79,7 +83,8 @@ void TWI_read_callback(void) {
 	}
 }
 
-void I2C_init (void){	
+void I2C_init (void)
+{	
 	/* TWD0 (PA10) and TWCK0 (PA9) pin init */
 	PMC->PMC_PCER0 |= (1 << PIOA_IRQn);
 	PIOA->PIO_PDR = (PIO_PDR_P9|PIO_PDR_P10);
@@ -110,7 +115,7 @@ int main(void)
 	int i;
 	SystemInit();
     I2C_init();
-	for (i;i<sizeof(databuff);i++){
+	for (i=0;i<sizeof(databuff);i++) {
 		databuff[i] = i;	
 	}
 	/* I2C management performed in Interrupt handler*/

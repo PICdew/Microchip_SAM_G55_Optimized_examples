@@ -32,7 +32,8 @@ volatile uint8_t databuff[1024] = {0};
 volatile uint8_t first_data = 1;
 volatile uint32_t intAddr = 0;
 
-void FLEXCOM0_Handler(void){
+void FLEXCOM0_Handler(void)
+{
 	uint32_t status;
 	status = TWI0->TWI_SR;
 	/*** ERROR Interrupt Management ***/
@@ -49,15 +50,15 @@ void FLEXCOM0_Handler(void){
 			FLEXCOM0->FLEXCOM_THR = databuff[intAddr];
 			//Enable TWI PDC TX channel
 			TWI0->TWI_PTCR = (TWI_PTCR_RXTDIS|TWI_PTCR_TXTDIS);
-			TWI0->TWI_TPR = &databuff[intAddr+1];
+			TWI0->TWI_TPR = (uint32_t) &databuff[intAddr+1];
 			TWI0->TWI_TCR= 	TWI_TCR_TXCTR_Msk;
-			TWI0->TWI_RPR = &databuff[intAddr];
+			TWI0->TWI_RPR = (uint32_t) &databuff[intAddr];
 			TWI0->TWI_RCR= 	TWI_RCR_RXCTR_Msk;
 			TWI0->TWI_PTCR = (TWI_PTCR_RXTEN|TWI_PTCR_TXTEN);
 		}
 	}
-	/*** TWI Read Access detected ***/
-	if (status & TWI_SR_EOSACC)  {
+	/*** TWI End of Slave Access detected ***/
+	if (status & TWI_SR_EOSACC) {
 		first_data = 1;
 		// Disable DMA
 		TWI0->TWI_PTCR = (TWI_PTCR_RXTDIS);
@@ -65,7 +66,8 @@ void FLEXCOM0_Handler(void){
 	}
 }
 
-void I2C_init (void){	
+void I2C_init (void)
+{	
 	/* TWD0 (PA10) and TWCK0 (PA9) pin init */
 	PMC->PMC_PCER0 |= (1 << PIOA_IRQn);
 	PIOA->PIO_PDR = (PIO_PDR_P9|PIO_PDR_P10);
@@ -95,8 +97,8 @@ int main(void)
 {
 	int i;
 	SystemInit();
-	/*Fill test pattern in databuffer */	
-	for (i;i<sizeof(databuff);i++){
+	/*Fill test pattern in data buffer */	
+	for (i=0 ;i<sizeof(databuff);i++) {
 		databuff[i] = i;
 	}
     I2C_init();
