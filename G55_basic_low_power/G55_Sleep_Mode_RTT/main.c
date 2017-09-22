@@ -57,7 +57,7 @@ void Configure_GPIO(void)
 	/* Clear Sleepdeep bit */ 
 	SCB->SCR &= ~(SCB_SCR_SLEEPDEEP_Msk);
 	__WFI();
-	/*** MCU IN SLEEP MODE until interrupt detected (SW0 pressed) ***/
+	/*** MCU IN SLEEP MODE until interrupt is detected ***/
 }
 
 /**
@@ -71,7 +71,7 @@ int main(void)
 	SystemInit();
 	/* Configure LED0 pin*/
 	Configure_GPIO();
-	/* Initialize RTC to generate interrupt every 5 seconds */
+	/* Initialize RTT to generate interrupt every 5 seconds */
 	RTT_init();
 	/* Enter main program loop */
     while (1) 
